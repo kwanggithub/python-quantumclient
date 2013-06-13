@@ -257,6 +257,36 @@ COMMAND_V2 = {
         'quantumclient.quantum.v2_0.agentscheduler.ListRoutersOnL3Agent'),
     'l3-agent-list-hosting-router': utils.import_class(
         'quantumclient.quantum.v2_0.agentscheduler.ListL3AgentsHostingRouter'),
+    'firewall-rule-list': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallrule.ListFirewallRule'),
+    'firewall-rule-show': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallrule.ShowFirewallRule'),
+    'firewall-rule-create': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallrule.CreateFirewallRule'),
+    'firewall-rule-update': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallrule.UpdateFirewallRule'),
+    'firewall-rule-delete': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallrule.DeleteFirewallRule'),
+    'firewall-policy-list': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallpolicy.ListFirewallPolicy'),
+    'firewall-policy-show': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallpolicy.ShowFirewallPolicy'),
+    'firewall-policy-create': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallpolicy.CreateFirewallPolicy'),
+    'firewall-policy-update': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallpolicy.UpdateFirewallPolicy'),
+    'firewall-policy-delete': utils.import_class(
+        'quantumclient.quantum.v2_0.firewallpolicy.DeleteFirewallPolicy'),
+    'firewall-list': utils.import_class(
+        'quantumclient.quantum.v2_0.firewall.ListFirewall'),
+    'firewall-show': utils.import_class(
+        'quantumclient.quantum.v2_0.firewall.ShowFirewall'),
+    'firewall-create': utils.import_class(
+        'quantumclient.quantum.v2_0.firewall.CreateFirewall'),
+    'firewall-update': utils.import_class(
+        'quantumclient.quantum.v2_0.firewall.UpdateFirewall'),
+    'firewall-delete': utils.import_class(
+        'quantumclient.quantum.v2_0.firewall.DeleteFirewall'),
 }
 
 COMMANDS = {'2.0': COMMAND_V2}
