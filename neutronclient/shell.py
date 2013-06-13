@@ -34,6 +34,9 @@ from neutronclient.neutron.v2_0 import agent
 from neutronclient.neutron.v2_0 import agentscheduler
 from neutronclient.neutron.v2_0 import extension
 from neutronclient.neutron.v2_0 import floatingip
+from neutronclient.neutron.v2_0.fw import firewall
+from neutronclient.neutron.v2_0.fw import firewallpolicy
+from neutronclient.neutron.v2_0.fw import firewallrule
 from neutronclient.neutron.v2_0.lb import healthmonitor as lb_healthmonitor
 from neutronclient.neutron.v2_0.lb import member as lb_member
 from neutronclient.neutron.v2_0.lb import pool as lb_pool
@@ -177,6 +180,23 @@ COMMAND_V2 = {
     'l3-agent-router-remove': agentscheduler.RemoveRouterFromL3Agent,
     'router-list-on-l3-agent': agentscheduler.ListRoutersOnL3Agent,
     'l3-agent-list-hosting-router': agentscheduler.ListL3AgentsHostingRouter,
+    'firewall-rule-list': firewallrule.ListFirewallRule,
+    'firewall-rule-show': firewallrule.ShowFirewallRule,
+    'firewall-rule-create': firewallrule.CreateFirewallRule,
+    'firewall-rule-update': firewallrule.UpdateFirewallRule,
+    'firewall-rule-delete': firewallrule.DeleteFirewallRule,
+    'firewall-policy-list': firewallpolicy.ListFirewallPolicy,
+    'firewall-policy-show': firewallpolicy.ShowFirewallPolicy,
+    'firewall-policy-create': firewallpolicy.CreateFirewallPolicy,
+    'firewall-policy-update': firewallpolicy.UpdateFirewallPolicy,
+    'firewall-policy-delete': firewallpolicy.DeleteFirewallPolicy,
+    'firewall-policy-insert-rule': firewallpolicy.FirewallPolicyInsertRule,
+    'firewall-policy-remove-rule': firewallpolicy.FirewallPolicyRemoveRule,
+    'firewall-list': firewall.ListFirewall,
+    'firewall-show': firewall.ShowFirewall,
+    'firewall-create': firewall.CreateFirewall,
+    'firewall-update': firewall.UpdateFirewall,
+    'firewall-delete': firewall.DeleteFirewall,
 }
 
 COMMANDS = {'2.0': COMMAND_V2}
